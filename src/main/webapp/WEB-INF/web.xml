@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         
+		 
+		 <servlet>
+			<servlet-name>createevent</servlet-name>
+			<servlet-class>com.Events.CreateEventsServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>createevent</servlet-name>
+			<url-pattern>/insert</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>eventDetails</servlet-name>
+			<servlet-class>com.Events.eventDetailServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>eventDetails</servlet-name>
+			<url-pattern>/more</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 <servlet>
+			<servlet-name>updateevent</servlet-name>
+			<servlet-class>com.Events.updatEeventServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>updateevent</servlet-name>
+			<url-pattern>/update</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>deleteevent</servlet-name>
+			<servlet-class>com.Events.deleteEventServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>deleteevent</servlet-name>
+			<url-pattern>/delete</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>cancel</servlet-name>
+			<servlet-class>com.Events.cancelEventServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>cancel</servlet-name>
+			<url-pattern>/cancel</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>search</servlet-name>
+			<servlet-class>com.Events.searchEventsServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>search</servlet-name>
+			<url-pattern>/search</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		  <servlet>
+			<servlet-name>getservices</servlet-name>
+			<servlet-class>com.Services.getServicesServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>getservices</servlet-name>
+			<url-pattern>/getservice</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>serviceHome</servlet-name>
+			<servlet-class>com.Services.serviceAccessServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>serviceHome</servlet-name>
+			<url-pattern>/serviceHome</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>csServices</servlet-name>
+			<servlet-class>com.Services.csAccessServlet</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>csServices</servlet-name>
+			<url-pattern>/csServices</url-pattern>
+		 </servlet-mapping>
+		 
+		 <servlet>
+			<servlet-name>getEvents</servlet-name>
+			<servlet-class>com.Events.getEventList</servlet-class>
+		 </servlet>
+		 <servlet-mapping>
+			<servlet-name>getEvents</servlet-name>
+			<url-pattern>/getEvents</url-pattern>
+		 </servlet-mapping>
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		  <servlet>
+  
+  	<servlet-name>LoginClient</servlet-name>
+  	<servlet-class>com.client.LoginServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LoginClient</servlet-name>
+ 	<url-pattern>/loginclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>RegisterClient</servlet-name>
+  	<servlet-class>com.client.registerclientServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>RegisterClient</servlet-name>
+ 	<url-pattern>/registerclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateClient</servlet-name>
+  	<servlet-class>com.client.updateclientServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateClient</servlet-name>
+ 	<url-pattern>/updateclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>DeleteClient</servlet-name>
+  	<servlet-class>com.client.deleteclientServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteClient</servlet-name>
+ 	<url-pattern>/deleteclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>LogoutClient</servlet-name>
+  	<servlet-class>com.client.LogoutServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LogoutClient</servlet-name>
+ 	<url-pattern>/logoutclient</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>ViewClientProfile</servlet-name>
+  	<servlet-class>com.client.UserAccountServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewClientProfile</servlet-name>
+ 	<url-pattern>/useraccount</url-pattern>
+ 
+
+ </servlet-mapping>
+ 
+ 
+  
+  
+  
+    <servlet>
+  
+  	<servlet-name>LoginVendor</servlet-name>
+  	<servlet-class>com.vendor.VloginServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LoginVendor</servlet-name>
+ 	<url-pattern>/loginvendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+  
+ 
+  <servlet>
+  
+  	<servlet-name>RegisterVendor</servlet-name>
+  	<servlet-class>com.vendor.registervendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>RegisterVendor</servlet-name>
+ 	<url-pattern>/registervendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>DeleteVendor</servlet-name>
+  	<servlet-class>com.vendor.deletevendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteVendor</servlet-name>
+ 	<url-pattern>/deletevendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateVendor</servlet-name>
+  	<servlet-class>com.vendor.updatevendorServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateVendor</servlet-name>
+ 	<url-pattern>/updatevendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>ViewVendorProfile</servlet-name>
+  	<servlet-class>com.vendor.VendorUserAccountServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewVendorProfile</servlet-name>
+ 	<url-pattern>/vuseraccount</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>LogoutVendor</servlet-name>
+  	<servlet-class>com.vendor.VLogoutServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>LogoutVendor</servlet-name>
+ 	<url-pattern>/logoutvendor</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ <servlet>
+  
+  	<servlet-name>navigatetouserpage</servlet-name>
+  	<servlet-class>com.client.GetUserTypeServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>navigatetouserpage</servlet-name>
+ 	<url-pattern>/navigateuser</url-pattern>
+ 
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>Booking</servlet-name>
+  	<servlet-class>com.booking.BookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>Booking</servlet-name>
+ 	<url-pattern>/bookingevent</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>UpdateBooking</servlet-name>
+  	<servlet-class>com.booking.UpdateBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>UpdateBooking</servlet-name>
+ 	<url-pattern>/updatebooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ <servlet>
+  
+  	<servlet-name>ViewBooking</servlet-name>
+  	<servlet-class>com.booking.ViewBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>ViewBooking</servlet-name>
+ 	<url-pattern>/viewbooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+  <servlet>
+  
+  	<servlet-name>DeleteBooking</servlet-name>
+  	<servlet-class>com.booking.DeleteBookingServlet</servlet-class>
+  	
+  </servlet>
+  
+ <servlet-mapping>
+ 	<servlet-name>DeleteBooking</servlet-name>
+ 	<url-pattern>/deletebooking</url-pattern>
+ 
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+    <servlet>
+            <servlet-name>packageServlet</servlet-name>
+            <servlet-class>com.Package.packageServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>packageServlet</servlet-name>
+            <url-pattern>/add</url-pattern>
+         </servlet-mapping>
+         
+         
+         <servlet>
+            <servlet-name>deleteProfileServlet</servlet-name>
+            <servlet-class>com.Package.deleteProfileServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>deleteProfileServlet</servlet-name>
+            <url-pattern>/deletepkg</url-pattern>
+         </servlet-mapping>
+         
+         
+         <servlet>
+            <servlet-name>updateProfileServlet</servlet-name>
+            <servlet-class>com.Package.updateProfileServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>updateProfileServlet</servlet-name>
+            <url-pattern>/updatepkg</url-pattern>
+         </servlet-mapping>
+ 
+ 
+ 
+ 
+ 
+ <servlet>
+            <servlet-name>venueServlet</servlet-name>
+            <servlet-class>com.venue.venueServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>venueServlet</servlet-name>
+            <url-pattern>/insertvenue</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+            <servlet-name>updateVenueServlet</servlet-name>
+            <servlet-class>com.venue.updateVenueServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>updateVenueServlet</servlet-name>
+            <url-pattern>/editvenue</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+            <servlet-name>deleteVenueServlet</servlet-name>
+            <servlet-class>com.venue.deleteVenueServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>deleteVenueServlet</servlet-name>
+            <url-pattern>/removevenue</url-pattern>
+         </servlet-mapping>
+         
+         
+         <servlet>
+            <servlet-name>getpkgServlet</servlet-name>
+            <servlet-class>com.Package.getPackagesServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>getpkgServlet</servlet-name>
+            <url-pattern>/getPkgs</url-pattern>
+         </servlet-mapping>
+         
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+         
+</web-app>

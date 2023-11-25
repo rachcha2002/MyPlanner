@@ -1,0 +1,192 @@
+body{
+    background-image: url(images/wedding2.jpg);
+    background-size: cover;
+    color: rgb(253, 252, 252);
+}
+
+.section-0{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.section-0 .title{
+    font-size: 4rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:1000;
+    padding: 1rem;
+    
+}
+.section-0 .heropart{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#sec0 .search{
+    align-self: center;
+    align-items: center;
+}
+
+#sec0 .search form{
+    background-color: white;
+    width: 600px;
+    height: 35px;
+    display: flex;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    margin-left: 120px;
+  }
+  #sec0 .search form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    border-radius:10px 0 0 10px;
+  }
+  #sec0 .search form button{
+    background: black;
+    border: none;
+    outline: none;
+    padding:10px 50px;
+    color: white;
+    border-radius:0 10px 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  #sec0 .search form button:hover{
+    background-color: darkgray;
+    color: black;
+    font-weight: bold;
+  }
+  #sec0 .search form .searchimg{
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+  } 
+
+  
+
+.section-1{
+    height: 60vh;
+    overflow: auto;
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+}
+
+.faq{
+    min-width: 100%;
+    
+    padding: 1.5rem 2rem 2rem 1rem;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    
+}
+.event{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.event h3{
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.details{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1.4s ease;
+}
+.details h4{
+    color: black;
+    padding-top: 1rem;
+    line-height: 1.2;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.faq.active .details{
+    max-height: 300px;
+    /*animation: fade 1s ease-in-out;*/
+}
+
+.faq.active svg{
+    transform:rotate(180deg);
+}
+
+svg{
+    transition: transform 0.5s ease-in;
+    margin-left: 5rem;
+}
+.container{
+    width: 80%;
+    padding: 20px;
+    border-radius: 6px;
+    background:rgba(253, 252, 252, 0.8);;
+    box-shadow: 0 0 20px 0 #010101;
+    margin-left: 5rem;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    line-height: 22px;
+}
+
+#button {
+    margin-top: 10px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #060606;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+ }
+ #button:hover{
+        background-color: rgb(239, 26, 26);
+        color: white;
+ }
+#fbutton {
+    margin-top: 35px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #fffdfd;
+    font-size: 16px;
+    color: #080808;
+    cursor: pointer;
+ }
+ #fbutton:hover{
+    background-color: rgb(123, 120, 120);
+    color: rgb(0, 0, 0);
+}
+
+
+
+.voterquestion #submitq{
+    background: black;
+    width: 150px;
+    border: none;
+    outline: none;
+    padding:10px 40px;
+    color: white;
+    border-radius:8px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+  }
+  
+  
+ 
+  
+    .section-1 {
+      min-height: 100vh;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      background-image: url(images/wedding2.jpg);
+      background-size: cover; 
+      
+    }
+    
+    .form-create{
+        margin-top: 4rem;
+        
+    }
+    
+  
+
+  .cform {
+    width: 100%;
+    padding: 100px;
+    border-radius: 6px;
+    background:rgba(253, 252, 252, 0.9);;
+    box-shadow: 0 0 20px 0 #010101;
+    margin-left: 11rem;
+    margin-top: 5rem;
+    font-family: Roboto, Arial, sans-serif;
+    
+    }
+   
+    .btn-block {
+    margin-top: 10px;
+    text-align: center;
+    }
+    #submitbtn {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px; 
+    background: #060606;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 50px;
+    }
+    #submitbtn:hover{
+        background-color: darkgray;
+        color: white;
+    }
+    
+   .cform p{
+    margin-top: 40px;
+    font-size: large;
+   }
+  
+   
+    .cform .banner h1{
+      align-self: center;
+      color: #000000;
+      margin-left: 5rem;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    
+
+
+    @media (min-width: 568px) {
+    .name-item, .city-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .name-item input, .city-item input {
+    width: calc(50% - 20px);
+    }
+    .city-item select {
+    width: calc(50% - 8px);
+    }
+    }

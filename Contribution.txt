@@ -1,0 +1,37 @@
+Individual Contributions
+
+
+IT22107114-M.A.Rachith Tharana
+
+>All files in com.Event package
+>All files in com.Services package
+>All files regarding Header and Footer
+>Jsp files files regarding event(create event,update event,delete events,eventlist and eventDetails)
+>Jsp files for home,venue,services,access denied jsp files,customerHome and vendorHome jsp files
+
+
+
+IT22121738- Kurukulasooriya K D
+
+>All files in com.vendor, com.client  packages.
+>Created jsp files Account Registration, View Account, Update Account,Delete Account related to Client and Vendor...
+>Created aboutus.jsp, contactus.jsp
+
+
+
+IT22087010-Wijayarathna G.S
+
+>All files in com.Package & com.venue
+>Created jsp files :package.jsp,packageProfile.jsp,UpdateProfile.jsp,deleteProfile.jsp,venue.jsp,venueProfile.jsp,updateVenueProfile.jsp,eleteVenue.jsp
+
+
+
+IT22276100-W.M.I.T.Warnasooriya
+ 
+>com.booking
+>booking.jsp
+>deletebooking.jsp
+>updatebooking.jsp
+>viewbooking.jsp
+
+
